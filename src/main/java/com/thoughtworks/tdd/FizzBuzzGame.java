@@ -7,27 +7,16 @@ package com.thoughtworks.tdd;
  */
 public class FizzBuzzGame {
     public String fizzBuzz(int number) {
-        if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
-            return "FizzBuzzWhizz";
-        }
-        if (number % 5 == 0 && number % 7 == 0) {
-            return "BuzzWhizz";
-        }
-        if (number % 3 == 0 && number % 7 == 0) {
-            return "FizzWhizz";
-        }
-        if (number % 3 == 0 && number % 5 == 0) {
-            return "FizzBuzz";
-        }
-        if (number % 7 == 0) {
-            return "Whizz";
+        String result = "";
+        if (number % 3 == 0) {
+            result += "Fizz";
         }
         if (number % 5 == 0) {
-            return "Buzz";
+            result += "Buzz";
         }
-        if (number % 3 == 0) {
-            return "Fizz";
+        if (number % 7 == 0) {
+            result += "Whizz";
         }
-        return "" + number;
+        return result == "" ? "" + number : result;
     }
 }
