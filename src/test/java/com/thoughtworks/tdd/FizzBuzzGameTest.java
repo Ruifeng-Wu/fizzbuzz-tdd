@@ -1,9 +1,10 @@
 package com.thoughtworks.tdd;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 
 /**
  * @author Ruifeng-Wu
@@ -15,6 +16,7 @@ public class FizzBuzzGameTest {
 
     @Test
     public void returns_the_number_given_number_not_divisible_by_3_5_nor_7() throws Exception {
+
         assertThat(fizzBuzzGame.fizzBuzz(1), is("1"));
     }
 
