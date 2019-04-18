@@ -42,4 +42,9 @@ public class FizzBuzzGameTest {
     public void returns_FizzWhizz_given_number_divisible_by_both_3_7() throws Exception {
         assertThat(fizzBuzzGame.fizzBuzz(21),is("FizzWhizz"));
     }
+
+    @Test
+    public void returns_BuzzWhizz_given_number_divisible_by_both_5_7() throws Exception {
+        assertThat(fizzBuzzGame.fizzBuzz(35),is("BuzzWhizz"));
+    }
 }
