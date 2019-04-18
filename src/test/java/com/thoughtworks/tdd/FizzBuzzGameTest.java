@@ -17,4 +17,8 @@ public class FizzBuzzGameTest {
         assertThat(fizzBuzzGame.fizzBuzz(1),is("1"));
     }
 
+    @Test
+    public void returns_Fizz_given_number_divisible_by_3() throws Exception {
+        assertThat(fizzBuzzGame.fizzBuzz(3),is("Fizz"));
+    }
 }
