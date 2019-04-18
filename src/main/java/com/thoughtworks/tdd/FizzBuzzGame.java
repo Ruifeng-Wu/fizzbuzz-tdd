@@ -7,6 +7,6 @@ package com.thoughtworks.tdd;
  */
 public class FizzBuzzGame {
     public String fizzBuzz(int number) {
-        return "";
+        return ""+number;
     }
 }
