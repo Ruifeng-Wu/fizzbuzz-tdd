@@ -30,21 +30,26 @@ public class FizzBuzzGameTest {
 
     @Test
     public void returns_Whizz_given_number_divisible_by_7() throws Exception {
-        assertThat(fizzBuzzGame.fizzBuzz(7),is("Whizz"));
+        assertThat(fizzBuzzGame.fizzBuzz(7), is("Whizz"));
     }
 
     @Test
     public void returns_FizzBuzz_given_number_divisible_by_both_3_5() throws Exception {
-        assertThat(fizzBuzzGame.fizzBuzz(15),is("FizzBuzz"));
+        assertThat(fizzBuzzGame.fizzBuzz(15), is("FizzBuzz"));
     }
 
     @Test
     public void returns_FizzWhizz_given_number_divisible_by_both_3_7() throws Exception {
-        assertThat(fizzBuzzGame.fizzBuzz(21),is("FizzWhizz"));
+        assertThat(fizzBuzzGame.fizzBuzz(21), is("FizzWhizz"));
     }
 
     @Test
     public void returns_BuzzWhizz_given_number_divisible_by_both_5_7() throws Exception {
-        assertThat(fizzBuzzGame.fizzBuzz(35),is("BuzzWhizz"));
+        assertThat(fizzBuzzGame.fizzBuzz(35), is("BuzzWhizz"));
+    }
+
+    @Test
+    public void returns_FizzBuzzWhizz_given_number_divisible_by_3_5_7() throws Exception {
+        assertThat(fizzBuzzGame.fizzBuzz(105), is("FizzBuzzWhizz"));
     }
 }
