@@ -7,6 +7,9 @@ package com.thoughtworks.tdd;
  */
 public class FizzBuzzGame {
     public String fizzBuzz(int number) {
+        if (number%3==0){
+            return "Fizz";
+        }
         return ""+number;
     }
 }
