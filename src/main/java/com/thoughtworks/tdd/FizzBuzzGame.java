@@ -17,7 +17,7 @@ public class FizzBuzzGame {
         if (isWhizz(number)) {
             result += "Whizz";
         }
-        return result == "" ? "" + number : result;
+        return "".equals(result) ? String.valueOf(number) : result;
     }
 
     private boolean isWhizz(int number) {
