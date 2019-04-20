@@ -8,27 +8,27 @@ package com.thoughtworks.tdd;
 public class FizzBuzzGame {
     public String fizzBuzz(int number) {
         String result = "";
-        if (isFizz(number)) {
+        if (divisible3(number)) {
             result += "Fizz";
         }
-        if (isBuzz(number)) {
+        if (divisible5(number)) {
             result += "Buzz";
         }
-        if (isWhizz(number)) {
+        if (divisible7(number)) {
             result += "Whizz";
         }
         return "".equals(result) ? String.valueOf(number) : result;
     }
 
-    private boolean isWhizz(int number) {
+    private boolean divisible7(int number) {
         return number % 7 == 0;
     }
 
-    private boolean isBuzz(int number) {
+    private boolean divisible5(int number) {
         return number % 5 == 0;
     }
 
-    private boolean isFizz(int number) {
+    private boolean divisible3(int number) {
         return number % 3 == 0;
     }
 }
